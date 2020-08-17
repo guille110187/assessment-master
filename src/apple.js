@@ -52,7 +52,7 @@ class Apple extends React.Component {
         <header>
           <Menu />
         </header>
-        <div className="base-welcome zoomout">
+        <div className="base-apple zoomout">
           <div className="container-apple zoomout">
             <div className="header-wrap zoomout header-name-apple">
               <h2><Link to="apple">Welcome to Apple</Link></h2>

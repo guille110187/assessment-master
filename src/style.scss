@@ -151,6 +151,7 @@ button {
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
   transition: all 2s ease;
+  margin: 0 50px;
 }
 .zoomout h3 {
   font-size: 1.5em;
@@ -179,23 +180,30 @@ button {
 .header-name {
   font-weight: bold;
   font-size: 24px;
-    margin-top: 91px;
+  margin-top: 91px;
   margin-bottom: 129px;
 }
 
-.header-name a{
+.header-name a {
   color: black;
 }
-.header-name a:hover{
-  text-decoration:none;
+.header-name a:hover {
+  text-decoration: none;
   color: black;
 }
 
-.welcome-menu {
+.zoomout .welcome-menu {
   background-color: black;
   text-align: center;
+  height: 20px;
 }
-
+.end .zoomout .welcome-menu {
+   height: 50px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
 .zoomout .container-image {
   width: 20px;
   height: 20px;
@@ -222,15 +230,24 @@ button {
   width: 20px;
   height: 20px;
   display: inline;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  transition: all 2s ease;
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
 }
-
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .counter {
   font-size: 38px;
   letter-spacing: 10px;
+  font-weight: 800;
 }
 
 /* End Welcome Page */
@@ -278,33 +295,38 @@ button {
 }
 
 .navbar-brand {
-    padding-bottom: .5125rem !important;
- }
- .img-fluid{width: 64%;}
+  padding-bottom: 0.5125rem !important;
+}
+.img-fluid {
+  width: 64%;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
 }
-.mr-auto-new{
-  padding-right: 100px;
+.mr-auto-new {
+  padding-right: 25px;
 }
-.mr-auto-new a{
-  color: #A9A9A9 !important;
+.mr-auto-new a {
+  color: #a9a9a9 !important;
   font-size: 14px;
 }
-.mr-auto-new a:hover{
-  background-color: #65C6F8;
+.mr-auto-new a:hover {
+  background-color: #65c6f8;
   border-radius: 25px;
-  color:white !important;
+  color: white !important;
 }
- .navbar-dark .navbar-nav .nav-link.active {
-  color:white !important;
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white !important;
   background-color: #65c6f8;
   border-radius: 25px;
 }
-/* End menu */
 
+.navbar {
+  padding: 0.5rem 0.3rem !important;
+}
+/* End menu */
 
 /* Apple Page */
 
@@ -312,13 +334,13 @@ button {
   background-image: url("./images/Apple-gray.png");
   background-position: center;
   background-repeat: no-repeat;
-    display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: stretch;
-  background-color: #FCFCFC;
+  background-color: #f3f3f3;
   height: 80vh;
 }
 .zoomout h2 {
@@ -334,59 +356,61 @@ button {
 .header-name-apple {
   font-weight: bold;
   font-size: 34px;
-  margin-top: 260px;;
- 
+  margin-top: 260px;
 }
 
-.header-name-apple a{
+.header-name-apple a {
   color: black;
 }
-.header-name-apple a:hover{
-  text-decoration:none;
+.header-name-apple a:hover {
+  text-decoration: none;
   color: black;
 }
 
-.apple-our-products{
+.apple-our-products {
   margin-top: 50px;
 }
-.apple-our-products h4{
-    color:#7FD3FA;
-    font-size: 14px;
+.apple-our-products h4 {
+  color: #7fd3fa;
+  font-size: 14px;
 }
 
-.icons{
+.icons {
   display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    width: 12%;
-    }
-.icon-laptop{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 12%;
+}
+.icon-laptop {
   padding: 0 20px;
 }
 
 .icons figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .icons figure:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.base-apple {
+  padding: 0 50px;
 }
 /* End Apple Page */

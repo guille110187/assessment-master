@@ -50,6 +50,7 @@ class Welcome extends React.Component {
 
       
       <div className={this.state.zoomOutClassName}>
+        <div className="zoomout">
         <div className="welcome-menu zoomout">
           <div className="container-image">
             <img className="img-fluid welcome-image" src={logo} alt="Logo" />
@@ -69,6 +70,7 @@ class Welcome extends React.Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     )
