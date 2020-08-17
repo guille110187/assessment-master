@@ -48,6 +48,7 @@ class Welcome extends React.Component {
 
     return (
 
+      
       <div className={this.state.zoomOutClassName}>
         <div className="welcome-menu zoomout">
           <div className="container-image">

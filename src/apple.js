@@ -58,6 +58,7 @@ class Apple extends React.Component {
           </div>
         </div>
       </div>
+
     )
   }
 
