@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(./fonts/Poppins-Black.ttf) format("truetype"),
+    url(./fonts/Poppins-Bold.ttf) format("truetype");
+}
+.body {
+  font-family: Poppins;
+}
+.base-container {
+  height: 100vh;
+  background: #81d5fb; /* Old browsers */
+  background: -moz-linear-gradient(top, #81d5fb 0%, #cceefe 40%, #e9f8ff 60%, #fdffff 81%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #81d5fb 0%,
+    #cceefe 40%,
+    #e9f8ff 60%,
+    #fdffff 81%,
+    #ffffff 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #81d5fb 0%,
+    #cceefe 40%,
+    #e9f8ff 60%,
+    #fdffff 81%,
+    #ffffff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81d5fb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.form {
+  background-color: #fff;
+  margin-top: 160px;
+  padding: 25px;
+  box-shadow: 2px 4px 6px -6px #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: auto;
+}
+.form-custom {
+  margin-bottom: 0rem !important;
+}
+.form-custom input {
+  border-radius: none !important;
+  margin-bottom: 14px !important;
+  border: 1px solid #000 !important;
+}
+.form-custom label {
+  font-size: 18px !important;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: black !important;
+  border-color: black !important;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.link-register {
+  font-size: 10px;
+  align-self: flex-end;
+  margin-top: 2px;
+}
+.link-login {
+  font-size: 10px;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+h1 {
+  text-align: center;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+}
+
+label {
+  margin-bottom: 5px;
+  height: 22px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #777;
+}
+
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: rgb(235, 54, 54);
+  margin-top: -15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 14px;
+  padding: 5px 20px;
+  background-color: #000;
+  color: white;
+  background-color: 250ms;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 0;
+}
+
+/*  Welcome Page */
+
+.header-wrap {
+  margin: 0 auto;
+  // height: 200px;
+  // width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.zoomout .container-welcome {
+  height: 60vh;
+}
+.end .zoomout .container-welcome {
+  height: 90vh;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.zoomout h3 {
+  font-size: 1.5em;
+}
+.end .zoomout h3 {
+  font-size: 0.9em;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.container-welcome {
+  background-image: url("./images/apple-background-welcome.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.header-name {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Poppins;
+  margin-top: 91px;
+  margin-bottom: 129px;
+}
+
+.header-name a{
+  color: black;
+}
+.header-name a:hover{
+  text-decoration:none;
+  color: black;
+}
+
+.welcome-menu {
+  background-color: black;
+  text-align: center;
+}
+
+.zoomout .container-image {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin: auto;
+}
+.end .zoomout .container-image {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.zoomout .welcome-image {
+  display: none;
+}
+.end .zoomout .welcome-image {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.counter {
+  font-size: 38px;
+  font-family: Poppins;
+  letter-spacing: 10px;
+}
+
+/* End Welcome Page */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  label {
+    font-size: 20px;
+  }
+  input {
+    margin-top: 6px;
+    min-width: 18em;
+    height: 37px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: "Poppins";
+    background-color: #f3f3f3;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    transition: all 250ms ease-in-out;
+    &:hover {
+      //background-color: #ffffff;
+      //box-shadow: 0px 0px 14px 0.3px #0e81ce96;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+    }
+  }
+}
+
+/*   Menu */
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end !important;
+}
+.navbar-dark .navbar-brand {
+  color: #fff;
+  background-color: black;
+  width: 3%;
+  text-align: center;
+}
+
+.navbar-brand {
+    padding-bottom: .5125rem !important;
+ }
+ .img-fluid{width: 64%;}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+.mr-auto-new{
+  padding-right: 100px;
+}
+.mr-auto-new a{
+  color: #A9A9A9 !important;
+}
+.mr-auto-new a:hover{
+  background-color: #65C6F8;
+  border-radius: 25px;
+  color:white !important;
+}
+ .navbar-dark .navbar-nav .nav-link.active {
+  color:white !important;
+  background-color: #65c6f8;
+  border-radius: 25px;
+}
+/* End menu */
+
+
+/* Apple Page */
+
+.container-apple {
+  background-image: url("./images/Apple-gray.png");
+  background-position: center;
+  background-repeat: no-repeat;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #FCFCFC;
+  height: 80vh;
+}
+.zoomout h2 {
+  font-size: 0.6em;
+}
+.end .zoomout h2 {
+  font-size: 1.5em;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.header-name-apple {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Poppins;
+  margin-top: 165px;
+ 
+}
+
+.header-name-apple a{
+  color: black;
+}
+.header-name-apple a:hover{
+  text-decoration:none;
+  color: black;
+}
+
+.apple-our-products{
+  margin-top: 125px;
+}
+.apple-our-products h4{
+    color:#7FD3FA;
+    font-size: 14px;
+}
+
+/* End Apple Page */
