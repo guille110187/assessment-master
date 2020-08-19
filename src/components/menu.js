@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table } from 'react-bootstrap';
-import logo from './images/applelogo.png';
+import logo from '../images/applelogo.png';
 import Cookies from 'js-cookie';
 
 class Menu extends React.Component {

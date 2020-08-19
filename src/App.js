@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import "./style.scss";
-import Login from './login';
-import Register from './register';
-import Welcome from './welcome';
-import Apple from './apple';
+import "./css/style.scss";
+import Login from './components/login';
+import Register from './components/register';
+import Welcome from './components/welcome';
+import Apple from './components/apple';
 import Cookies from 'js-cookie';
-import Menu from './menu';
+
+
 
 
 import {
@@ -41,9 +42,9 @@ class App extends React.Component {
         <Redirect from='/' to='/welcome' />
         <Route path="/login" render={() => <Login authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <Route path="/register" render={() => <Register authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
-        <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} signout={this.signout} />
-        <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated} signout={this.signout} />
-        <PrivateRoute path="/menu" component={Menu} isAuthenticated={this.isAuthenticated} signout={this.signout} />
+        <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated}  />
+        
       </Router>
     )
   }

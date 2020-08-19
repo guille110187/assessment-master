@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"), url(./fonts/Poppins-Black.ttf) format("truetype"),
-    url(./fonts/Poppins-Bold.ttf) format("truetype");
+  src: local("Poppins"), url(../fonts/Poppins-Black.ttf) format("truetype"),
+    url(../fonts/Poppins-Bold.ttf) format("truetype");
 }
 .body {
   font-family: Poppins;
@@ -165,7 +165,7 @@ button {
 }
 
 .container-welcome {
-  background-image: url("./images/apple-background-welcome.jpg");
+  background-image: url("../images/apple-background-welcome.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,7 +331,7 @@ button {
 /* Apple Page */
 
 .container-apple {
-  background-image: url("./images/Apple-gray.png");
+  background-image: url("../images/Apple-gray.png");
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -414,3 +414,4 @@ button {
   padding: 0 50px;
 }
 /* End Apple Page */
+

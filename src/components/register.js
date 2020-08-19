@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Link, Redirect, withRouter } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { BoxLoading } from 'react-loadingg';
-import "./style.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -120,7 +118,7 @@ class Register extends Component {
                   </button>
                 </form>
                 <div className="link-login">
-                  <div>Already registered ? <Link to="login">Log-in</Link> </div>
+                  <div>Already registered ? <Link to="login">Sing-in</Link> </div>
                 </div>
 
               </div>
