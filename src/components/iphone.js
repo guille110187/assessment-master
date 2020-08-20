@@ -1,81 +1,65 @@
 import React from 'react';
 import Menu from './menu';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table, Container, Row, Col } from 'react-bootstrap';
+
 import { Link, Redirect, withRouter } from "react-router-dom";
-import iphone from './images/iphone_icon.png';
-import laptop from './images/laptop_icon.png';
-import watch from './images/watch_icon.png';
+import iphone from '../images/iphone_icon.png';
+import laptop from '../images/laptop_icon.png';
+import watch from '../images/watch_icon.png';
+import ImageGallery from 'react-image-gallery';
 
-class Apple extends React.Component {
-
-  constructor() {
-    super();
-    this.state = {
-      zoomOutClassName: 'in',
-      zoomoutEnd: false
-    }
+const images = [
+  {
+    original: 'http://lorempixel.com/1000/600/nature/1/',
+    thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+  },
+  {
+    original: 'http://lorempixel.com/1000/600/nature/2/',
+    thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+  },
+  {
+    original: 'http://lorempixel.com/1000/600/nature/3/',
+    thumbnail: 'http://lorempixel.com/250/150/nature/3/'
   }
+]
 
-  handleOnClick = () => {
-    this.props.signout();
-    this.props.history.push('/login');
-  }
+class Iphone extends React.Component {
 
-  headerZoomOut() {
-    let zoomOutClassName = this.state.zoomOutClassName;
-    zoomOutClassName = zoomOutClassName + ' ' + 'end'
-    this.setState({ zoomOutClassName });
-  }
-
-  zoomout() {
-
-    this.state.zoomoutEnd = true;
-    this.headerZoomOut();
-
-  }
-
-  doEffect() {
-    if (this.state.zoomoutEnd)
-      return;
-
-    setTimeout(this.zoomout.bind(this), 500);
-  }
-
-
+  
   render() {
-
-    this.doEffect();
 
     return (
 
-      <div className={this.state.zoomOutClassName}>
+      <div>
         <header>
           <Menu />
         </header>
-        <div className="base-apple zoomout">
-          <div className="container-apple zoomout">
-            <div className="header-wrap zoomout header-name-apple">
-              <h2><Link to="apple">Welcome to Apple</Link></h2>
-            </div>
-            <br />
-            <br />
-            <div className="apple-our-products"><h4>See our Products</h4></div>
-            <br />
-            <br />
-            <div className="icons">
-              <figure><img className="img-fluid" src={iphone} alt="Iphone" /></figure>
-              <figure className="icon-laptop "><img className="img-fluid" src={laptop} alt="Laptop" /></figure>
-              <figure><img className="img-fluid" src={watch} alt="Watch" /></figure>
-            </div>
+        <Container fluid className="welcome-iphone">
+          <Row>
+            <Col className="iphone-ultimate">
+              <Row className="padding-10">
+                <div className="iphone-text">iPhone</div>
+              </Row>
+              <Row className="padding-10">
+                <div className="iphone-the-ultimate">The ultimate iPhone</div>
+              </Row>
+              <Row className="padding-10">
+                <p className="iphone-future">The future is here. Join the iphone Upgrade<br />Program to get the lates Iphone - NOW!</p>
+              </Row >
+              <Row className="padding-10">
+                <div className="iphone-start">Starts shipping MM-DD-YYYY</div>
+              </Row>
+            </Col>
+            <Col><ImageGallery items={images} /></Col>
+            
+          </Row>
 
-          </div>
-        </div>
+        </Container>
       </div>
-
     )
   }
 
 }
 
 
-export default withRouter(Apple);
+export default withRouter(Iphone);

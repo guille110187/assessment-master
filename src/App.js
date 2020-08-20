@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import "./css/style.scss";
 import Login from './components/login';
 import Register from './components/register';
 import Welcome from './components/welcome';
 import Apple from './components/apple';
+import Iphone from './components/iphone';
 import Cookies from 'js-cookie';
 
 
@@ -39,11 +40,12 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Redirect from='/' to='/welcome' />
+        {/* <Redirect from='/' to='/welcome' /> */}
         <Route path="/login" render={() => <Login authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <Route path="/register" render={() => <Register authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} />
         <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated}  />
+        <PrivateRoute path="/iphone" component={Iphone} isAuthenticated={this.isAuthenticated}  />
         
       </Router>
     )

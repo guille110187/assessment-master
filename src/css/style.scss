@@ -198,7 +198,7 @@ button {
   height: 20px;
 }
 .end .zoomout .welcome-menu {
-   height: 50px;
+  height: 50px;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
@@ -231,18 +231,18 @@ button {
   height: 20px;
   display: inline;
   opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .counter {
   font-size: 38px;
@@ -284,6 +284,9 @@ button {
 }
 
 /*   Menu */
+.nav-link a:hover {
+  text-decoration: none !important;
+}
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end !important;
 }
@@ -317,6 +320,7 @@ button {
   border-radius: 25px;
   color: white !important;
 }
+
 .navbar-dark .navbar-nav .nav-link.active {
   color: white !important;
   background-color: #65c6f8;
@@ -415,3 +419,62 @@ button {
 }
 /* End Apple Page */
 
+.welcome-iphone {
+  padding: 0 65px !important;
+}
+
+.iphone-ultimate {
+  margin: 0;
+  padding: 0;
+  background: url("../images/apple-iphone.png") repeat;
+  background-size: 16%;
+  background-repeat: no-repeat;
+  background-position: 92% 18%;
+  padding: 30px;
+  height: auto;
+}
+
+.iphone-ultimate:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #f2f2f2 15%,
+    #f3f3f3 29%,
+    #f4f4f4 43%,
+    #FBFBFB 58%,
+    #fcfcfc 72%,
+    #fdfdfd 81%,
+    #ffffff 100%,
+    #ffffff 100%,
+    #ffffff 100%
+  );
+}
+.padding-10 {
+  padding: 5px 0;
+  padding-left: 60px;
+}
+.iphone-text {
+  color: red;
+  font-weight: 900;
+}
+.iphone-the-ultimate {
+  color: black;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 82px;
+}
+.iphone-future{
+color: #BEBEBE;
+font-size: 14px;
+}
+.iphone-start{
+  color: red;
+  font-size: 12px;
+}
+/* Iphone Page */

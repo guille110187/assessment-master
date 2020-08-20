@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class Register extends Component {
+class Register extends React.Component {
 
 
   constructor(props) {
