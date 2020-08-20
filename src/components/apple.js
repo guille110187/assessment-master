@@ -63,7 +63,7 @@ class Apple extends React.Component {
             <br />
             <br />
             <div className="icons">
-              <figure><img className="img-fluid" src={iphone} alt="Iphone" /></figure>
+              <figure><Link to="iphone"><img className="img-fluid" src={iphone} alt="Iphone" /></Link></figure>
               <figure className="icon-laptop "><img className="img-fluid" src={laptop} alt="Laptop" /></figure>
               <figure><img className="img-fluid" src={watch} alt="Watch" /></figure>
             </div>

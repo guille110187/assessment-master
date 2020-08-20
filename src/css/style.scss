@@ -431,7 +431,7 @@ button {
   background-repeat: no-repeat;
   background-position: 92% 18%;
   padding: 30px;
-  height: auto;
+  height: 50vh;
 }
 
 .iphone-ultimate:before {
@@ -447,7 +447,7 @@ button {
     #f2f2f2 15%,
     #f3f3f3 29%,
     #f4f4f4 43%,
-    #FBFBFB 58%,
+    #fbfbfb 58%,
     #fcfcfc 72%,
     #fdfdfd 81%,
     #ffffff 100%,
@@ -469,12 +469,66 @@ button {
   font-weight: 900;
   line-height: 82px;
 }
-.iphone-future{
-color: #BEBEBE;
-font-size: 14px;
+.iphone-future {
+  color: #bebebe;
+  font-size: 14px;
 }
-.iphone-start{
+.iphone-start {
   color: red;
   font-size: 12px;
 }
+
+.carousel .slide {
+  background: transparent !important;
+}
+.carousel .slider-wrapper {
+  width: 45% !important;
+}
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border-bottom: 3px solid red !important;
+}
+.carousel .thumb {
+  border: none !important;
+}
+.gallery {
+  padding: 40px;
+}
+.img-iphone {
+  width: 25%;
+}
+.icon-iphone {
+  margin: auto;
+  height: 50vh;
+}
+.thumbs-wrapper {
+  margin-left: -200px !important;
+  margin-top: -50px !important;
+}
+.iphone-price {
+  color: #cccccc;
+  font-weight: 900;
+  font-size: 32px;
+}
+.iphone-buy{
+  color:red;
+  font-size: 13px;
+  font-weight: 900;
+}
+.iphone-price-section{
+  line-height: 5px;
+  margin: -170px 0 0 100px;
+  width: 50%;
+}
+.icon-iphone figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.icon-iphone figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 /* Iphone Page */

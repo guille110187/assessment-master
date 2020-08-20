@@ -22,6 +22,7 @@
     "react-loadingg": "^1.7.2",
     "react-native-animate-loading-button": "^1.0.3",
     "react-responsive-animate-navbar": "^1.1.8",
+    "react-responsive-carousel": "^3.2.9",
     "react-scripts": "^3.4.1",
     "reactstrap": "^8.5.1",
     "typeface-poppins": "0.0.72",

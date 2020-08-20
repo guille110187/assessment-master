@@ -6,26 +6,15 @@ import { Link, Redirect, withRouter } from "react-router-dom";
 import iphone from '../images/iphone_icon.png';
 import laptop from '../images/laptop_icon.png';
 import watch from '../images/watch_icon.png';
-import ImageGallery from 'react-image-gallery';
+import ImageGallaryComponent from './gallery';
 
-const images = [
-  {
-    original: 'http://lorempixel.com/1000/600/nature/1/',
-    thumbnail: 'http://lorempixel.com/250/150/nature/1/',
-  },
-  {
-    original: 'http://lorempixel.com/1000/600/nature/2/',
-    thumbnail: 'http://lorempixel.com/250/150/nature/2/'
-  },
-  {
-    original: 'http://lorempixel.com/1000/600/nature/3/',
-    thumbnail: 'http://lorempixel.com/250/150/nature/3/'
-  }
-]
+
+
+
 
 class Iphone extends React.Component {
 
-  
+
   render() {
 
     return (
@@ -35,8 +24,8 @@ class Iphone extends React.Component {
           <Menu />
         </header>
         <Container fluid className="welcome-iphone">
-          <Row>
-            <Col className="iphone-ultimate">
+          <Row >
+            <Col xs={12} md={6} className="iphone-ultimate">
               <Row className="padding-10">
                 <div className="iphone-text">iPhone</div>
               </Row>
@@ -50,9 +39,21 @@ class Iphone extends React.Component {
                 <div className="iphone-start">Starts shipping MM-DD-YYYY</div>
               </Row>
             </Col>
-            <Col><ImageGallery items={images} /></Col>
-            
+            <Col xs={6} md={5} className="gallery">
+              <ImageGallaryComponent />
+            </Col>
+            <Col xs={6} md={1} className="icon-iphone">
+              <figure><Link to="iphone"><img className="img-iphone" src={iphone} alt="Iphone" /></Link></figure>
+              <figure><img className="img-iphone" src={laptop} alt="Laptop" /></figure>
+              <figure><img className="img-iphone" src={watch} alt="Watch" /></figure>
+            </Col>
           </Row>
+          <Row>
+            <Col xs={6} md={2} className="iphone-price-section">
+              <p className="iphone-price">From $699</p><br /><p className="iphone-buy">Buy Now</p>
+            </Col>
+          </Row>
+
 
         </Container>
       </div>
