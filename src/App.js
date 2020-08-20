@@ -5,7 +5,8 @@ import Login from './components/login';
 import Register from './components/register';
 import Welcome from './components/welcome';
 import Apple from './components/apple';
-import Iphone from './components/iphone';
+import iPhone from './components/iphone';
+import Watch from './components/watch';
 import Cookies from 'js-cookie';
 
 
@@ -44,9 +45,10 @@ class App extends React.Component {
         <Route path="/login" render={() => <Login authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <Route path="/register" render={() => <Register authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} />
-        <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated}  />
-        <PrivateRoute path="/iphone" component={Iphone} isAuthenticated={this.isAuthenticated}  />
-        
+        <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/iphone" component={iPhone} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/watch" component={Watch} isAuthenticated={this.isAuthenticated} />
+
       </Router>
     )
   }
@@ -55,7 +57,7 @@ class App extends React.Component {
 const PrivateRoute = ({ component: Component, isAuthenticated: isAuthenticated, signout: signout, ...rest }) => (
   <Route {...rest} render={(props) => (
     isAuthenticated() === true
-      ? <Component {...props}  isAuthenticated={isAuthenticated} signout={signout} />
+      ? <Component {...props} isAuthenticated={isAuthenticated} signout={signout} />
       : <Redirect to="/login" />
   )} />
 )

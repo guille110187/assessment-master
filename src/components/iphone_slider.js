@@ -4,7 +4,7 @@ import React from "react";
 import iPhone_front from '../images/iPhone_front.png';
 import iPhone_back from '../images/iPhone_back.png';
 
-class ImageGallaryComponent extends React.Component {
+class IPhone_Slider extends React.Component {
     render() {
         return (
             <div>
@@ -21,5 +21,5 @@ class ImageGallaryComponent extends React.Component {
     };
 }
 
-export default ImageGallaryComponent;
+export default IPhone_Slider;
 

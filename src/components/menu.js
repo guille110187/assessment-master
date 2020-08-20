@@ -6,17 +6,15 @@ import logo from '../images/applelogo.png';
 import Cookies from 'js-cookie';
 
 class Menu extends React.Component {
-    
+
     constructor(props) {
         super(props);
-       
+
     }
     handleClick(e) {
         Cookies.remove("user");
         this.props.history.push('/login');
     }
-   
-   
 
     render() {
         return (
@@ -27,13 +25,21 @@ class Menu extends React.Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
 
-                            <Nav className="mr-auto-new">
-                                <Nav.Link as={Link} to="/iphone">Iphone</Nav.Link>
-                                <Nav.Link href="#link">MacBook Pro</Nav.Link>
-                                <Nav.Link href="#link">Watch </Nav.Link>
-                                <Nav.Link href="#link" active>Notify me</Nav.Link>
+                            <Nav className="mr-auto-new" activeKey={this.props.location.pathname}>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to="/iphone" eventKey="/iphone">iPhone</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to="/welcome" eventKey="/mac">MacBook Pro</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to="/watch" eventKey="/watch">Watch</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
                                 <Nav.Link onClick={this.handleClick.bind(this)}>Log Out</Nav.Link>
+                                </Nav.Item>
                             </Nav>
+                            <Nav className="notify-me">Notify me</Nav>
                         </Navbar.Collapse>
                     </Navbar>
                 </header>
