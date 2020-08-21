@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import "./style.scss";
-import Login from './login';
-import Register from './register';
-import Welcome from './welcome';
-import Apple from './apple';
+import "./css/style.scss";
+import Login from './components/login';
+import Register from './components/register';
+import Welcome from './components/welcome';
+import Apple from './components/apple';
+import iPhone from './components/iphone';
+import Watch from './components/watch';
+import Mac from './components/mac';
 import Cookies from 'js-cookie';
-import Menu from './menu';
+
+
 
 
 import {
@@ -38,12 +42,15 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Redirect from='/' to='/welcome' />
+        { <Redirect from='/' to='/welcome' /> }
         <Route path="/login" render={() => <Login authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <Route path="/register" render={() => <Register authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
-        <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} signout={this.signout} />
-        <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated} signout={this.signout} />
-        <PrivateRoute path="/menu" component={Menu} isAuthenticated={this.isAuthenticated} signout={this.signout} />
+        <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/iphone" component={iPhone} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/mac" component={Mac} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/watch" component={Watch} isAuthenticated={this.isAuthenticated} />
+
       </Router>
     )
   }
@@ -52,7 +59,7 @@ class App extends React.Component {
 const PrivateRoute = ({ component: Component, isAuthenticated: isAuthenticated, signout: signout, ...rest }) => (
   <Route {...rest} render={(props) => (
     isAuthenticated() === true
-      ? <Component {...props}  isAuthenticated={isAuthenticated} signout={signout} />
+      ? <Component {...props} isAuthenticated={isAuthenticated} signout={signout} />
       : <Redirect to="/login" />
   )} />
 )

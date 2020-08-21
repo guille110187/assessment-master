@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"), url(./fonts/Poppins-Black.ttf) format("truetype"),
-    url(./fonts/Poppins-Bold.ttf) format("truetype");
+  src: local("Poppins"), url(../fonts/Poppins-Black.ttf) format("truetype"),
+    url(../fonts/Poppins-Bold.ttf) format("truetype");
 }
 .body {
   font-family: Poppins;
@@ -165,7 +165,7 @@ button {
 }
 
 .container-welcome {
-  background-image: url("./images/apple-background-welcome.jpg");
+  background-image: url("../images/apple-background-welcome.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,7 +198,7 @@ button {
   height: 20px;
 }
 .end .zoomout .welcome-menu {
-   height: 50px;
+  height: 50px;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
@@ -231,18 +231,18 @@ button {
   height: 20px;
   display: inline;
   opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .counter {
   font-size: 38px;
@@ -284,6 +284,9 @@ button {
 }
 
 /*   Menu */
+.nav-link a:hover {
+  text-decoration: none !important;
+}
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end !important;
 }
@@ -302,36 +305,44 @@ button {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 .mr-auto-new {
-  padding-right: 25px;
+  padding-right: 10px;
 }
 .mr-auto-new a {
   color: #a9a9a9 !important;
   font-size: 14px;
 }
 .mr-auto-new a:hover {
-  background-color: #65c6f8;
-  border-radius: 25px;
-  color: white !important;
+  color: black !important;
 }
-.navbar-dark .navbar-nav .nav-link.active {
-  color: white !important;
-  background-color: #65c6f8;
-  border-radius: 25px;
+.mr-auto-new a:active {
+  color: black !important;
 }
 
 .navbar {
-  padding: 0.5rem 0.3rem !important;
+  padding: 0.5rem 2.8rem 0.5rem 0.3rem !important;
 }
+.notify-me {
+  background-color: #65c6f8;
+  border-radius: 25px;
+  color: white !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+.nav-link.active {
+  color: black !important;
+  text-decoration: none;
+}
+
 /* End menu */
 
 /* Apple Page */
 
 .container-apple {
-  background-image: url("./images/Apple-gray.png");
+  background-image: url("../images/Apple-gray.png");
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -414,3 +425,277 @@ button {
   padding: 0 50px;
 }
 /* End Apple Page */
+
+.welcome-iphone {
+  padding: 0 65px !important;
+}
+
+.iphone-ultimate {
+  margin: 0;
+  padding: 0;
+  background: url("../images/apple-iphone.png") repeat;
+  background-size: 16%;
+  background-repeat: no-repeat;
+  background-position: 92% 18%;
+  padding: 30px;
+  height: 50vh;
+}
+
+.iphone-ultimate:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #f2f2f2 15%,
+    #f3f3f3 29%,
+    #f4f4f4 43%,
+    #fbfbfb 58%,
+    #fcfcfc 72%,
+    #fdfdfd 81%,
+    #ffffff 100%,
+    #ffffff 100%,
+    #ffffff 100%
+  );
+}
+.padding-10 {
+  padding: 5px 0;
+  padding-left: 60px;
+}
+.iphone-text {
+  color: red;
+  font-weight: 900;
+}
+.iphone-the-ultimate {
+  color: black;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 82px;
+}
+.iphone-future {
+  color: #bebebe;
+  font-size: 14px;
+}
+.iphone-start {
+  color: red;
+  font-size: 12px;
+}
+
+.carousel .slide {
+  background: transparent !important;
+}
+.iphone-slider .carousel .slider-wrapper {
+  width: 45%;
+}
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border-bottom: 3px solid red !important;
+}
+.carousel .thumb {
+  border: none !important;
+}
+.gallery {
+  padding: 40px;
+}
+
+.nav-item img {
+  width: 20px;
+}
+.thumbs-wrapper {
+  margin-left: -200px !important;
+  margin-top: -50px !important;
+}
+.iphone-price {
+  color: #cccccc;
+  font-weight: 900;
+  font-size: 32px;
+}
+.iphone-buy {
+  color: red;
+  font-size: 13px;
+  font-weight: 900;
+}
+.iphone-price-section {
+  line-height: 5px;
+  margin: -170px 0 0 100px;
+  width: 50%;
+}
+.icon-iphone figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.icon-iphone figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* Iphone Page */
+
+/* Watch */
+
+.watch-future {
+  color: #bebebe;
+  font-size: 14px;
+  width: 50%;
+}
+.watch-slider .carousel .slider-wrapper {
+  width: 75%;
+}
+
+.welcome-iphone {
+  .carousel .control-dots {
+    position: initial;
+    margin: 60px 0;
+
+    .dot {
+      opacity: 1;
+      width: 16px;
+      height: 16px;
+      outline: none;
+      margin: 0px 20px;
+      border: 1px solid gray;
+      box-shadow: none;
+    }
+
+    li.dot:nth-child(1) {
+      background-color: white;
+    }
+    li.dot:nth-child(2) {
+      background-color: black;
+    }
+    li.dot.selected:after {
+      content: "";
+      border: 1px solid red;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: -7px;
+      margin-left: -14px;
+    }
+  }
+}
+.welcome-iphone .gallery_watch.watch-slider {
+  padding-top: 50px;
+}
+.watch-header-text {
+  color: black;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 82px;
+}
+.watch-price-section {
+  line-height: 5px;
+  margin: -70px 0 0 100px;
+}
+.vertical-bar {
+  margin: auto;
+}
+/* End Watch */
+
+/* Mac */
+
+.header-mac {
+  margin: 0;
+  background: url("../images/mac_header.png") repeat;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 76% 69%;
+  padding: 30px;
+}
+
+.header-mac:before {
+  content: " ";
+  width: 96%;
+  height: 65%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  margin-left: 49px;
+}
+.header-mac-text {
+  padding-left: 77px !important;
+  padding-top: 25px;
+}
+.header-mac-title {
+  color: #5ac8fa;
+  font-weight: 900;
+}
+.header-mac-date {
+  color: red;
+  font-size: 12px;
+}
+.header-mac-more {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+}
+.header-mac-description-title {
+  width: 61%;
+  color: #5a5a5a;
+  line-height: 17px;
+  margin-top: 70px;
+  margin-left: -31px !important;
+}
+.header-mac-description-title .header-mac-description {
+  font-size: 28px;
+  font-weight: 900;
+}
+.header-mac-description-title .header-mac-description span {
+  font-size: 10px;
+}
+
+.vertical-icon {
+  margin: auto;
+  padding-top: 192px;
+}
+.vertical-icon .nav-item img {
+  width: 17px;
+}
+.header-more {
+  width: 30%;
+  line-height: 53px;
+  margin-top: 22px;
+}
+.mac-subscribe {
+  background-color: #f2f2f2;
+  margin-top: -37px;
+}
+.mac-buy {
+  margin-left: 87px;
+  margin-top: 90px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #66cbfa;
+}
+.img-wrapper {
+  width: 450px;
+  height: 196px;
+  overflow: hidden;
+  margin-left: 46px;
+}
+
+img.laptop {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -57px;
+}
+
+.form-header {
+  font-size: 25px;
+  font-weight: 900;
+}
+.form-subscribe {
+  padding: 50px;
+}
+
+/* End Mac */

@@ -2,9 +2,9 @@ import React from 'react';
 import Menu from './menu';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table } from 'react-bootstrap';
 import { Link, Redirect, withRouter } from "react-router-dom";
-import iphone from './images/iphone_icon.png';
-import laptop from './images/laptop_icon.png';
-import watch from './images/watch_icon.png';
+import iphone from '../images/iphone_icon.png';
+import laptop from '../images/laptop_icon.png';
+import watch from '../images/watch_icon.png';
 
 class Apple extends React.Component {
 
@@ -55,7 +55,7 @@ class Apple extends React.Component {
         <div className="base-apple zoomout">
           <div className="container-apple zoomout">
             <div className="header-wrap zoomout header-name-apple">
-              <h2><Link to="apple">Welcome to Apple</Link></h2>
+              <h2>Welcome to Apple</h2>
             </div>
             <br />
             <br />
@@ -63,7 +63,7 @@ class Apple extends React.Component {
             <br />
             <br />
             <div className="icons">
-              <figure><img className="img-fluid" src={iphone} alt="Iphone" /></figure>
+              <figure><Link to="iphone"><img className="img-fluid" src={iphone} alt="Iphone" /></Link></figure>
               <figure className="icon-laptop "><img className="img-fluid" src={laptop} alt="Laptop" /></figure>
               <figure><img className="img-fluid" src={watch} alt="Watch" /></figure>
             </div>
