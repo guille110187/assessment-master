@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link, Redirect, withRouter } from "react-router-dom";
-import { Formik, Form, Field } from "formik";
-import * as Yup from 'yup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
@@ -20,13 +18,10 @@ class Login extends React.Component {
   }
 
   render() {
-
-
     return (
       this.props.isAuthenticated() ?
         <Redirect to="/welcome" />
         :
-
         <div className="base-container">
           <div className="content">
             <div className="form" >

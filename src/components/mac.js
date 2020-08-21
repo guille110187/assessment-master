@@ -1,8 +1,8 @@
 import React from 'react';
 import Menu from './menu';
 import Menu_Vertical from './menu_vertical';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table, Container, Row, Col, InputGroup } from 'react-bootstrap';
-import { Link, Redirect, withRouter } from "react-router-dom";
+import { Form, Button, Container, Row, Col, InputGroup } from 'react-bootstrap';
+import { withRouter } from "react-router-dom";
 import Mac_keyboard from '../images/mac_keyboard.png';
 
 

@@ -1,11 +1,7 @@
 import React from 'react';
 import Menu from './menu';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table, Container, Row, Col } from 'react-bootstrap';
-
-import { Link, Redirect, withRouter } from "react-router-dom";
-import iphone from '../images/iphone_icon.png';
-import laptop from '../images/laptop_icon.png';
-import watch from '../images/watch_icon.png';
+import { Container, Row, Col } from 'react-bootstrap';
+import { withRouter } from "react-router-dom";
 import Watch_Slider from './watch_slider';
 import Menu_Vertical from './menu_vertical';
 
@@ -40,9 +36,6 @@ class Iphone extends React.Component {
               <Watch_Slider />
             </Col>
             <Col xs={6} md={1} className="vertical-bar">
-              {/* <figure><Link to="iphone"><img className="img-iphone" src={iphone} alt="Iphone" /></Link></figure>
-              <figure><img className="img-iphone" src={laptop} alt="Laptop" /></figure>
-              <figure><img className="img-iphone" src={watch} alt="Watch" /></figure> */}
               <Menu_Vertical />
             </Col>
           </Row>
@@ -51,8 +44,6 @@ class Iphone extends React.Component {
               <p className="iphone-price">From $699</p><br /><p className="iphone-buy">Buy Now</p>
             </Col>
           </Row>
-
-
         </Container>
       </div>
     )

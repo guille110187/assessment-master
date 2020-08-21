@@ -46,8 +46,6 @@ class Register extends React.Component {
           setTimeout(() => {
             console.log("Logging in", values);
             setSubmitting(false);
-             //alert(JSON.stringify(values, null, 2));
-           // this.props.history.replace("/apple");
           }, 500);
         }}
 

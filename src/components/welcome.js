@@ -1,5 +1,4 @@
 import React from "react";
-import apple from '../images/apple-background.jpg'
 import { withRouter, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../images/applelogo.png';

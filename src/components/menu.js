@@ -24,7 +24,6 @@ class Menu extends React.Component {
                         <Navbar.Brand as={Link} to="welcome"><img className="img-fluid" src={logo} alt="Logo" /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-
                             <Nav className="mr-auto-new" activeKey={this.props.location.pathname}>
                                 <Nav.Item>
                                     <Nav.Link as={Link} to="/iphone" eventKey="/iphone">iPhone</Nav.Link>

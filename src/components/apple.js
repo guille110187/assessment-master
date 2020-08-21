@@ -28,16 +28,13 @@ class Apple extends React.Component {
   }
 
   zoomout() {
-
     this.state.zoomoutEnd = true;
     this.headerZoomOut();
-
   }
 
   doEffect() {
     if (this.state.zoomoutEnd)
       return;
-
     setTimeout(this.zoomout.bind(this), 500);
   }
 
@@ -47,7 +44,6 @@ class Apple extends React.Component {
     this.doEffect();
 
     return (
-
       <div className={this.state.zoomOutClassName}>
         <header>
           <Menu />
@@ -82,11 +78,9 @@ class Apple extends React.Component {
                 />
               </Link>
             </div>
-
           </div>
         </div>
       </div>
-
     )
   }
 

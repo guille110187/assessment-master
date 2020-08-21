@@ -1,11 +1,9 @@
 import React from 'react';
 import Menu from './menu';
 import Menu_Vertical from './menu_vertical';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table, Container, Row, Col } from 'react-bootstrap';
-import { Link, Redirect, withRouter } from "react-router-dom";
+import { Container, Row, Col } from 'react-bootstrap';
+import { withRouter } from "react-router-dom";
 import IPhone_Slider from './iphone_slider';
-
-
 
 
 class Iphone extends React.Component {
@@ -13,7 +11,6 @@ class Iphone extends React.Component {
   render() {
 
     return (
-
       <div>
         <Menu />
         <Container fluid className="welcome-iphone">
@@ -36,9 +33,6 @@ class Iphone extends React.Component {
               <IPhone_Slider />
             </Col>
             <Col xs={6} md={1} className="vertical-bar">
-              {/* <figure><Link to="iphone"><img className="img-iphone" src={iphone} alt="Iphone" /></Link></figure>
-              <figure><img className="img-iphone" src={laptop} alt="Laptop" /></figure>
-              <figure><Link to="watch"><img className="img-iphone" src={watch} alt="Watch" /></Link></figure> */}
               <Menu_Vertical />
             </Col>
           </Row>
@@ -47,8 +41,6 @@ class Iphone extends React.Component {
               <p className="iphone-price">From $699</p><br /><p className="iphone-buy">Buy Now</p>
             </Col>
           </Row>
-
-
         </Container>
       </div>
     )
