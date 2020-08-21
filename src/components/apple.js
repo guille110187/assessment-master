@@ -69,18 +69,24 @@ class Apple extends React.Component {
               {/* <figure><Link to="iphone"><img className="img-fluid" src={iphone} alt="Iphone" /></Link></figure>
               <figure className="icon-laptop "><img className="img-fluid" src={laptop} alt="Laptop" /></figure>
               <figure><img className="img-fluid" src={watch} alt="Watch" /></figure> */}
-              <PhoneIphone
-                size={34}
-                color='#CCCCCC'
-              />
-              <LaptopMac
-                size={34}
-                color='#CCCCCC'
-              />
-              <Watch
-                size={34}
-                color='#CCCCCC'
-              />
+              <Link to="iphone">
+                <PhoneIphone
+                  size={34}
+                  color='#CCCCCC'
+                />
+              </Link>
+              <Link to="mac">
+                <LaptopMac
+                  size={34}
+                  color='#CCCCCC'
+                />
+              </Link>
+              <Link to="watch">
+                <Watch
+                  size={34}
+                  color='#CCCCCC'
+                />
+              </Link>
             </div>
 
           </div>
