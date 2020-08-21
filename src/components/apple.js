@@ -2,9 +2,6 @@ import React from 'react';
 import Menu from './menu';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table } from 'react-bootstrap';
 import { Link, Redirect, withRouter } from "react-router-dom";
-import iphone from '../images/iphone_icon.png';
-import laptop from '../images/laptop_icon.png';
-import watch from '../images/watch_icon.png';
 import PhoneIphone from 'rmdi/lib/PhoneIphone';
 import LaptopMac from 'rmdi/lib/LaptopMac';
 import Watch from 'rmdi/lib/Watch';
@@ -66,9 +63,6 @@ class Apple extends React.Component {
             <br />
             <br />
             <div className="icons">
-              {/* <figure><Link to="iphone"><img className="img-fluid" src={iphone} alt="Iphone" /></Link></figure>
-              <figure className="icon-laptop "><img className="img-fluid" src={laptop} alt="Laptop" /></figure>
-              <figure><img className="img-fluid" src={watch} alt="Watch" /></figure> */}
               <Link to="iphone">
                 <PhoneIphone
                   size={34}
