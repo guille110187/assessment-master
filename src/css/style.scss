@@ -411,13 +411,13 @@ button {
   padding: 0 20px;
 }
 
-.icons figure img {
+.icons svg {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.icons figure:hover img {
+.icons svg:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }

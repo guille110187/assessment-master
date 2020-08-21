@@ -5,6 +5,9 @@ import { Link, Redirect, withRouter } from "react-router-dom";
 import iphone from '../images/iphone_icon.png';
 import laptop from '../images/laptop_icon.png';
 import watch from '../images/watch_icon.png';
+import PhoneIphone from 'rmdi/lib/PhoneIphone';
+import LaptopMac from 'rmdi/lib/LaptopMac';
+import Watch from 'rmdi/lib/Watch';
 
 class Apple extends React.Component {
 
@@ -63,9 +66,21 @@ class Apple extends React.Component {
             <br />
             <br />
             <div className="icons">
-              <figure><Link to="iphone"><img className="img-fluid" src={iphone} alt="Iphone" /></Link></figure>
+              {/* <figure><Link to="iphone"><img className="img-fluid" src={iphone} alt="Iphone" /></Link></figure>
               <figure className="icon-laptop "><img className="img-fluid" src={laptop} alt="Laptop" /></figure>
-              <figure><img className="img-fluid" src={watch} alt="Watch" /></figure>
+              <figure><img className="img-fluid" src={watch} alt="Watch" /></figure> */}
+              <PhoneIphone
+                size={34}
+                color='#CCCCCC'
+              />
+              <LaptopMac
+                size={34}
+                color='#CCCCCC'
+              />
+              <Watch
+                size={34}
+                color='#CCCCCC'
+              />
             </div>
 
           </div>
