@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Redirect, withRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
+import Auth from './auth';
 
 class Login extends React.Component {
 
@@ -10,8 +11,7 @@ class Login extends React.Component {
   }
 
   handleOnClick = () => {
-    this.props.authenticate(() => {
-      console.log('cookie is in from the invocation');
+    Auth.authenticate(() => {
       this.props.history.push('/welcome')
     });
 
@@ -19,7 +19,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      this.props.isAuthenticated() ?
+      Auth.isAuthenticated() ?
         <Redirect to="/welcome" />
         :
         <div className="base-container">

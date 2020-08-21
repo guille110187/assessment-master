@@ -3,7 +3,7 @@ import { Link, Redirect, withRouter } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Auth from './auth';
 
 class Register extends React.Component {
 
@@ -14,7 +14,7 @@ class Register extends React.Component {
 
   render() {
     return (
-      this.props.isAuthenticated() ?
+      Auth.isAuthenticated() ?
         <Redirect to="/welcome" />
         :
 
@@ -39,12 +39,10 @@ class Register extends React.Component {
         })}
 
         onSubmit={(values, { setSubmitting }) => {
-          this.props.authenticate(() => {
-            console.log('cookie is in from the invocation');
+            Auth.authenticate(() => {
             this.props.history.push('/welcome')
           });
           setTimeout(() => {
-            console.log("Logging in", values);
             setSubmitting(false);
           }, 500);
         }}
