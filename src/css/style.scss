@@ -590,12 +590,112 @@ button {
   font-weight: 900;
   line-height: 82px;
 }
-.watch-price-section{
+.watch-price-section {
   line-height: 5px;
-    margin: -70px 0 0 100px;
+  margin: -70px 0 0 100px;
 }
 .vertical-bar {
   margin: auto;
- 
 }
 /* End Watch */
+
+/* Mac */
+
+.header-mac {
+  margin: 0;
+  background: url("../images/mac_header.png") repeat;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 76% 69%;
+  padding: 30px;
+}
+
+.header-mac:before {
+  content: " ";
+  width: 96%;
+  height: 65%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  margin-left: 49px;
+}
+.header-mac-text {
+  padding-left: 77px !important;
+  padding-top: 25px;
+}
+.header-mac-title {
+  color: #5ac8fa;
+  font-weight: 900;
+}
+.header-mac-date {
+  color: red;
+  font-size: 12px;
+}
+.header-mac-more {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+}
+.header-mac-description-title {
+  width: 60%;
+  color: #5a5a5a;
+  line-height: 17px;
+  margin-top: 70px;
+  margin-left: -31px !important;
+}
+.header-mac-description-title .header-mac-description {
+  font-size: 28px;
+  font-weight: 900;
+}
+.header-mac-description-title .header-mac-description span {
+  font-size: 10px;
+}
+
+.vertical-icon {
+  margin: auto;
+  padding-top: 192px;
+}
+.vertical-icon .nav-item img {
+  width: 17px;
+}
+.header-more {
+  width: 30%;
+  line-height: 53px;
+  margin-top: 22px;
+}
+.mac-subscribe {
+  background-color: #f2f2f2;
+  margin-top: -37px
+}
+.mac-buy {
+  margin-left: 87px;
+  margin-top: 90px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #66cbfa;
+}
+.img-wrapper {
+  width: 430px;
+  height: 196px;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+img.laptop {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -57px;
+}
+
+.form-header {
+  font-size: 25px;
+  font-weight: 900;
+}
+.form-subscribe {
+  padding: 50px;
+}
+
+/* End Mac */

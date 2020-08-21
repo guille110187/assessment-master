@@ -7,6 +7,7 @@ import Welcome from './components/welcome';
 import Apple from './components/apple';
 import iPhone from './components/iphone';
 import Watch from './components/watch';
+import Mac from './components/mac';
 import Cookies from 'js-cookie';
 
 
@@ -47,7 +48,7 @@ class App extends React.Component {
         <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} />
         <PrivateRoute path="/apple" component={Apple} isAuthenticated={this.isAuthenticated} />
         <PrivateRoute path="/iphone" component={iPhone} isAuthenticated={this.isAuthenticated} />
-        <PrivateRoute path="/watch" component={Watch} isAuthenticated={this.isAuthenticated} />
+        <PrivateRoute path="/mac" component={Mac} isAuthenticated={this.isAuthenticated} />
 
       </Router>
     )

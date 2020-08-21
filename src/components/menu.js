@@ -30,7 +30,7 @@ class Menu extends React.Component {
                                     <Nav.Link as={Link} to="/iphone" eventKey="/iphone">iPhone</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link as={Link} to="/welcome" eventKey="/mac">MacBook Pro</Nav.Link>
+                                    <Nav.Link as={Link} to="/mac" eventKey="/mac">MacBook Pro</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link as={Link} to="/watch" eventKey="/watch">Watch</Nav.Link>

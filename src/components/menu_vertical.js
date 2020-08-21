@@ -28,7 +28,7 @@ class Menu_Vertical extends React.Component {
                                 <Nav.Link as={Link} to="/iphone" eventKey="/iphone"><figure><img className="img-iphone" src={iphone} alt="Iphone" /></figure></Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link as={Link} to="/welcome" eventKey="/mac"><figure><img className="img-iphone" src={laptop} alt="Laptop" /></figure></Nav.Link>
+                                <Nav.Link as={Link} to="/mac" eventKey="/mac"><figure><img className="img-iphone" src={laptop} alt="Laptop" /></figure></Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link as={Link} to="/watch" eventKey="/watch"><figure><img className="img-iphone" src={watch} alt="Watch" /></figure></Nav.Link>

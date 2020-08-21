@@ -2,16 +2,12 @@ import React from 'react';
 import Menu from './menu';
 import Menu_Vertical from './menu_vertical';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table, Container, Row, Col } from 'react-bootstrap';
-
 import { Link, Redirect, withRouter } from "react-router-dom";
 import IPhone_Slider from './iphone_slider';
 
 
 
-
-
 class Iphone extends React.Component {
-
 
   render() {
 
