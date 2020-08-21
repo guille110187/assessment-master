@@ -42,7 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        { <Redirect from='/' to='/welcome' /> }
+        {/* <Redirect from='/' to='/welcome' /> */}
         <Route path="/login" render={() => <Login authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <Route path="/register" render={() => <Register authenticate={this.authenticate} isAuthenticated={this.isAuthenticated} />} />
         <PrivateRoute path="/welcome" component={Welcome} isAuthenticated={this.isAuthenticated} />

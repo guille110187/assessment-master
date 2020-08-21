@@ -603,11 +603,12 @@ button {
 
 .header-mac {
   margin: 0;
-  background: url("../images/mac_header.png") repeat;
-  background-size: 30%;
+  background: url("../images/mac_background.png") repeat;
+  background-size: 40%;
   background-repeat: no-repeat;
-  background-position: 76% 69%;
+  background-position: 72% 8%;
   padding: 30px;
+  background-blend-mode: hard-light;
 }
 
 .header-mac:before {

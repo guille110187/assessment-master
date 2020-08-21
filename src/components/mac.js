@@ -13,11 +13,8 @@ class Mac extends React.Component {
     render() {
 
         return (
-
             <div>
-                <header>
-                    <Menu />
-                </header>
+                <Menu />
                 <Container fluid className="">
                     <Row className="header-mac">
                         <Col xs={11} md={11} className="header-mac-text" >
