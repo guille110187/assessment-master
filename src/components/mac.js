@@ -25,7 +25,7 @@ class Mac extends React.Component {
                                 <div className="header-mac-title">MacBook Pro</div>
                             </Row>
                             <Row>
-                                <div className="header-mac-date">stats shipping MM-DD-YYYY</div>
+                                <div className="header-mac-date">starts shipping MM-DD-YYYY</div>
                             </Row>
                             <Row className="header-more">
                                 <div className="header-mac-more">More power.</div>
@@ -43,12 +43,12 @@ class Mac extends React.Component {
                     </Row>
                     <Row>
                         <Col xs={2}><div className="mac-buy">Buy Now ></div></Col>
-                        <Col xs={5}>
+                        <Col xs={4}>
                             <div className="img-wrapper">
                                 <img className="laptop" src={Mac_keyboard} alt="Logo" />
                             </div>
                         </Col>
-                        <Col xs={5} className="mac-subscribe">
+                        <Col xs={6} className="mac-subscribe">
                             <div className="form-subscribe">
                                 <Form>
                                     <div className="form-header">Subscribe Now</div>
