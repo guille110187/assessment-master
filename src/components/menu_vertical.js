@@ -6,6 +6,10 @@ import iphone from '../images/iphone_icon.png';
 import laptop from '../images/laptop_icon.png';
 import watch from '../images/watch_icon.png';
 import Cookies from 'js-cookie';
+import PhoneIphone from 'rmdi/lib/PhoneIphone';
+import LaptopMac from 'rmdi/lib/LaptopMac';
+import Watch from 'rmdi/lib/Watch';
+
 
 class Menu_Vertical extends React.Component {
 
@@ -18,23 +22,39 @@ class Menu_Vertical extends React.Component {
         this.props.history.push('/login');
     }
 
+
     render() {
         return (
             <div className="welcome-nav">
                 <header>
-                   
-                        <Nav className="flex-column" activeKey={this.props.location.pathname}>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/iphone" eventKey="/iphone"><figure><img className="img-iphone" src={iphone} alt="Iphone" /></figure></Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/mac" eventKey="/mac"><figure><img className="img-iphone" src={laptop} alt="Laptop" /></figure></Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/watch" eventKey="/watch"><figure><img className="img-iphone" src={watch} alt="Watch" /></figure></Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                  
+
+                    <Nav className="flex-column" activeKey={this.props.location.pathname}>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/iphone" eventKey="/iphone">
+                                <PhoneIphone
+                                    size={28}
+                                    color='#CCCCCC'
+                                />
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/mac" eventKey="/mac">
+                                <LaptopMac
+                                    size={28}
+                                    color='#CCCCCC'
+                                />
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/watch" eventKey="/watch">
+                                <Watch
+                                    size={28}
+                                    color='#CCCCCC'
+                                />
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+
                 </header>
 
             </div>

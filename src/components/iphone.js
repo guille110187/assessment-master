@@ -7,6 +7,7 @@ import IPhone_Slider from './iphone_slider';
 
 
 
+
 class Iphone extends React.Component {
 
   render() {
@@ -14,9 +15,7 @@ class Iphone extends React.Component {
     return (
 
       <div>
-        <header>
-          <Menu />
-        </header>
+        <Menu />
         <Container fluid className="welcome-iphone">
           <Row >
             <Col xs={12} md={6} className="iphone-ultimate">

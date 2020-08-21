@@ -668,7 +668,7 @@ button {
 }
 .mac-subscribe {
   background-color: #f2f2f2;
-  margin-top: -37px;
+  margin-top: -18px;
 }
 .mac-buy {
   margin-left: 87px;
@@ -678,17 +678,19 @@ button {
   color: #66cbfa;
 }
 .img-wrapper {
-  width: 450px;
-  height: 196px;
+  width: 550px;
+  height: 223px;
   overflow: hidden;
   margin-left: 46px;
+  padding-top: 197px;
 }
 
 img.laptop {
   position: relative;
   display: block;
-  width: 100%;
-  top: -57px;
+  width: 74%;
+  top: -147px;
+  height: 172px;
 }
 
 .form-header {
@@ -698,5 +700,19 @@ img.laptop {
 .form-subscribe {
   padding: 50px;
 }
+button.mb-2.btn.btn-dark {
+  background: black;
+}
 
+a.nav-link.active svg {
+  color: #707070;
+}
+
+.header-mac svg {
+  color: #707070;
+}
+.header-mac a.nav-link.active svg {
+  color: white;
+}
 /* End Mac */
+
